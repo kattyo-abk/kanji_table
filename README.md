@@ -1,11 +1,11 @@
-README.md
 
-#これは何
+
+# これは何
 
 日本語文字コードの暗黙変換を確認するためのデータ生成用スクリプト類です。
 
 
-#日本語文字コードの暗黙変換
+# 日本語文字コードの暗黙変換
 
 例として Windows を出しますが、
 Windows では ANSIコードページ cp932 (所謂 Shift_JIS)で
@@ -48,7 +48,7 @@ perl gen_kanji_table.pl -R ibm
 ### NEC選定IBM拡張漢字の表を表示する
 perl gen_kanji_table.pl -R necibm
 
-###改行コードをCRLFではなくLFにする
+### 改行コードをCRLFではなくLFにする
 perl gen_kanji_table.pl -N raw -R necibm
 
 
@@ -70,7 +70,7 @@ $ diff sjis_nec.txt Pasted-to-Notepad-sjis_nec.txt | perl nonascii_hex.pl
 $
 ```
 
-#サンプルファイル
+# サンプルファイル
 ## sample_text ディレクトリ
 |filename|概要|
 | ---- | ---- |
@@ -81,7 +81,7 @@ $
 |sjis_nec.txt|gen_kanji_table.pl で生成した NEC特殊文字 の表|
 |sjis_necibm.txt|gen_kanji_table.pl で生成した NEC選定IBM拡張漢字 の表|
 
-#ライセンス LICENSE
+# ライセンス LICENSE
 Perl スクリプトのみ MIT ライセンスです。
 sample_text ディレクトリのファイルは思想が込められていない著作物とは言えないデータです。CC0 とします。
 
